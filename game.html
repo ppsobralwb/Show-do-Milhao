@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show do Milhão</title>
+    <link rel="stylesheet" href="./css/game.css">
+</head>
+<body>
+    <div class="container">
+        <div class="info">
+            <p id="pontos">Você possui R$ 0,00</p>
+            <p id="acerto">Pergunta valendo R$ 1000,00</p>
+            <p id="erro">Erro = R$ 0,00</p>
+            <div class="controle">
+                <button class="parar" onclick="parar()">Parar</button>
+                <button class="parar" id="pulou" onclick="pular()">Pular 0/3</button>
+            </div>
+        </div>
+
+        <div class="quest">
+            <div id="perguntas">
+                <h2 id="pergunta">Pergunta</h2>
+            </div>
+            <div class="respostas">
+                <button class="btn" id="btn1" onclick="verificaResposta(1)">1</button>
+                <button class="btn" id="btn2" onclick="verificaResposta(2)">2</button>
+                <button class="btn" id="btn3" onclick="verificaResposta(3)">3</button>
+                <button class="btn" id="btn4" onclick="verificaResposta(4)">4</button>
+                <embed id="audio" src="./sounds/suspense.mp3" hidden="true">
+            </div>
+        </div>
+    </div>
+    <script src="./scripts/game.js"></script>
+</body>
+
+</html>
