@@ -9,9 +9,9 @@
 <body>
     <div class="container">
         <div class="info">
-            <p id="pontos">Você possui R$ 0,00</p>
-            <p id="acerto">Pergunta valendo R$ 1000,00</p>
-            <p id="erro">Erro = R$ 0,00</p>
+            <p id="pontos">Você possui R$0,00</p>
+            <p id="acerto">Pergunta valendo R$1000,00</p>
+            <p id="erro">Se errar ganha R$0,00</p>
             <div class="controle">
                 <button class="parar" onclick="parar()">Parar</button>
                 <button class="parar" id="pulou" onclick="pular()">Pular 0/3</button>
@@ -20,14 +20,14 @@
 
         <div class="quest">
             <div id="perguntas">
-                <h2 id="pergunta">Pergunta</h2>
+                <h2 id="pergunta"></h2>
             </div>
             <div class="respostas">
-                <button class="btn" id="btn1" onclick="verificaResposta(1)">1</button>
-                <button class="btn" id="btn2" onclick="verificaResposta(2)">2</button>
-                <button class="btn" id="btn3" onclick="verificaResposta(3)">3</button>
-                <button class="btn" id="btn4" onclick="verificaResposta(4)">4</button>
-                <embed id="audio" src="./sounds/suspense.mp3" hidden="true">
+                <button class="btn" id="btn1" onclick="verificaResposta(1)"></button>
+                <button class="btn" id="btn2" onclick="verificaResposta(2)"></button>
+                <button class="btn" id="btn3" onclick="verificaResposta(3)"></button>
+                <button class="btn" id="btn4" onclick="verificaResposta(4)"></button>
+                <embed id="audio" src="./sounds/suspense.mp3" hidden="true" loop="true">
             </div>
         </div>
     </div>
