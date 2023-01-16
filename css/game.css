@@ -24,9 +24,9 @@ body {
 .info {
     padding-top: 10px;
     background: linear-gradient(
-        90deg,
-        rgb(6, 109, 6) 1.19%,
-        #0000ec 250%
+        50deg,
+        rgb(6, 109, 6) 0.2%,
+        #0000ec 200%
     );
     width: 600px;
     border-radius: 15px;
