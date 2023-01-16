@@ -1,5 +1,5 @@
 * {
-    font-family: monospace;
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -30,8 +30,8 @@ body {
     );
     width: 600px;
     border-radius: 15px;
-    margin: 40px;
-    font-size: 35px;
+    margin: 15px;
+    font-size: 30px;
     font-weight: bold;
     display: flex;
     flex-direction: column;
@@ -42,7 +42,7 @@ body {
     margin: 15px;
 }
 
-.parar {
+.decisionButton {
     border-radius: 500px;
     margin-top: 30px;
     height: 50px;
@@ -52,13 +52,13 @@ body {
     cursor: pointer;
 }
 
-.parar:hover {
+.decisionButton:hover {
     background: red;
     border: 2px solid white;
     border-radius: 500px;
 }
 
-.parar:focus {
+.decisionButton:focus {
     outline: thin dotted;
     outline: 0px auto -webkit-focus-ring-color;
     outline-offset: 0px;

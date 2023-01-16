@@ -251,9 +251,11 @@ let nivel = perguntas_Nvl1;
 let premioAcumulado = premios[cont];
 let respostaAtual = 0;
 let contPulos = 0;
+let timer = 90;
 
 //Cria a pergunta aleatoriamente e a exclui da lista de perguntas 
 function criaPergunta (){
+    timer = 90;
     nivel = verificaNivel();
     aleatorio = random(nivel);
     var p = nivel[aleatorio];
@@ -322,11 +324,6 @@ function pular(){
     }
 }
 
-//Acaba o jogo e devolve o total ganho
-function parar(){
-    gameOverWin();
-}
-
 function gameOverWin(){
     alert("Parabéns, você ganhou R$" + premioAcumulado + ",00");
     return window.location.assign("index.html");
@@ -337,4 +334,16 @@ function gameOverLose(){
     return window.location.assign("index.html");
 }
 
+//Contador de tempo para dar a resposta
+function timeOut(){
+    setInterval(() => {
+        tempo.innerHTML = "Tempo: " + timer-- + "s";
+        if (timer == -2){
+            alert("TEMPO ESGOTADO! Infelizmente o tempo acabou, mas pelo menos você ganhou R$" + premioAcumulado/2 + ",00");
+            return window.location.assign("index.html");
+        }
+    }, 1000);
+}
+
 criaPergunta();
+timeOut();
